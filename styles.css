@@ -585,7 +585,7 @@ co
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 100%;
   width: 100%;
   padding: 2rem;
@@ -631,8 +631,8 @@ co
   line-height: 1.6;
   max-width: 500px;
   width: 90%;
-  text-align: center;
-  margin: 0 auto;
+  text-align: left;
+   
 }
 
 
