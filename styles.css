@@ -758,9 +758,15 @@ footer {
 .contact-button:hover {
   background-color: #5d3eff;
 }
-
-
-
+/* Small phones, tablets, large smartphones */
+@media (max-width:768px) {
+  nav { height: ;}
+}
+/*SMALL PHONES */
+@media (max-width:480px)
+ .nav_link:not(last-child) {
+  display: none;
+}
 
 
 
