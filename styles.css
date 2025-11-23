@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, span{
 h1{
     font-size: 36px;
 }
-
+p
 li {
     list-style: none;
 }
@@ -627,6 +627,139 @@ co
   text-align: left;
    
 }
+/* FOOTER */
+
+footer {
+  background-color: #242424;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* General link styling */
+.footer__social--link {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+/* Resume link stays underlined */
+.footer__social--link.resume-link {
+  text-decoration: underline;
+}
+/* Make all footer links white and remove underline */
+.footer__social--link {
+  color: white;
+  text-decoration: none;
+}
+.footer__logo-img {
+  width: 80%;
+  max-width: 80px; /* optional: prevents it from getting too large */
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+.footer {
+  background-color: #242424;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__social--list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.footer__social--link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__social--link[href^="mailto:"] {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.footer__social--link.resume-link {
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  color: white;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.footer__logo-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo-img {
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.footer__logo-img:hover {
+  transform: scale(1.1);
+}
+
+.footer__logo-popper {
+  margin-top: 0.5rem;
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer__logo-popper:hover {
+  color: #ccc;
+}
+.footer__logo-popper i {
+  color: white;
+}
+/* Underline only the first nav link (Languages) on hover */
+.nav__links-list li:first-child .nav__link--anchor:hover {
+  text-decoration: underline;
+}
+/* Base nav links */
+.nav-links a {
+  color: #242424;
+  text-decoration: none;
+}
+
+/* Hover underline for Languages and Projects */
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Contact button stays styled without underline */
+.contact-button {
+  background-color: #6030b1;
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 300ms ease;
+}
+
+.contact-button:hover {
+  background-color: #5d3eff;
+}
+
+
 
 
 
