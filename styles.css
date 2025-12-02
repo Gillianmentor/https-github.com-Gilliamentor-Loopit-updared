@@ -36,9 +36,33 @@ li {
     margin: 0 auto;
 
 }
-.text--purple{
-    color: #6030b1;
+.about-me__picture--mask{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.16);
+    margin-bottom: 28px;
 }
+@keyframes animate-profile-picture {
+   
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+.about-me__photo {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.about-me__photo:hover {
+  opacity: 0.5;
+}
+
 section:nth-child(even){
     background-color: #f8f8f8;
 }
@@ -280,6 +304,26 @@ padding: 0 16px;
 .about__me-img img {
   width: 200px;
   border-radius: 10px;
+}
+.about-me__picture {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.about-me__picture:hover {
+  opacity: 0.5;
+  .about-me__text {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.about-me__text:hover {
+  opacity: 0.5;
+}
+
 }
 
 .top-nav {
@@ -570,6 +614,15 @@ co
   transition: transform 0.5s ease, opacity 0.5s ease;
   z-index: 3;
 }
+.fade-on-hover {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.fade-on-hover:hover {
+  opacity: 0.5;
+}
+
 .project_wrapper:hover .project_description {
   transform: translateY(0);
   opacity: 1;
@@ -760,17 +813,110 @@ footer {
 }
 /* Small phones, tablets, large smartphones */
 @media (max-width:768px) {
-  nav { height: ;}
+  nav { height: 68px;  }
 }
 /*SMALL PHONES */
-@media (max-width:480px)
- .nav_link:not(last-child) {
+@media (max-width:480px) {
+ .nav_link:not(:last-child) 
   display: none;
 }
+.resume-btn {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
 
+.resume-btn:hover {
+  background-color: #f0f0f0;
+}
 
+.footer__logo-popper {
+  opacity: 1;
+  transition: all 300ms ease;
+}
+.footer_anchor:hover .footer__logo-popper {
+ transform: translateX(60px);
+ opacity: 0;
+}
 
+.link_hover-effect--white:after {
+    background-color: #ffffff;
+    
+}
+.link_hover-effect--hover:after {
+    width: 100%;
+    left: 0;
+}
 
+.fade-on-hover {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
 
+.fade-on-hover:hover {
+  opacity: 0.5;
+}
+
+/* General fade effect */
+.fade-on-hover {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.fade-on-hover:hover {
+  opacity: 0.5;
+}
+
+/* Layout fixes */
+.about-me__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-me__picture--mask {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.about-me__title {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.about-me__description {
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.about-me__links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.tech-stack__section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.tech-stack__title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.tech-stack__icons img {
+  width: 60px;
+  margin: 0 10px;
+}
 
 .
