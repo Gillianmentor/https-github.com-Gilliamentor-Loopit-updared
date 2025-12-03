@@ -160,6 +160,8 @@ padding: 0 16px;
    display: flex;
     text-align: center;
 }
+
+
 /*TECH - STACK */
   .language__img {
     width: 100%;
@@ -592,6 +594,7 @@ co
   margin: 0.75rem auto 1rem;
 }
  .project_description--para {
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -847,6 +850,9 @@ footer {
     background-color: #ffffff;
     
 }
+a:hover{
+  opacity: 0.7;
+}
 .link_hover-effect--hover:after {
     width: 100%;
     left: 0;
@@ -893,9 +899,10 @@ footer {
   margin-bottom: 16px;
 }
 
-.about-me__description {
+.about__me-description {
   max-width: 600px;
   margin-bottom: 20px;
+  animation: fade-up 650ms 400ms backwards
 }
 
 .about-me__links a {
@@ -958,7 +965,7 @@ footer {
         transform: translateY(0);
     }
 }
-.about-me__info--title {
+.about-me__title {
   margin-bottom: 16px;
     animation: fade-up 650ms 400ms backwards;
 }
