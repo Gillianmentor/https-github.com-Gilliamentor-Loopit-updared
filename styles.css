@@ -47,13 +47,14 @@ li {
 }
 @keyframes animate-profile-picture {
    
-    }
+    
     80% {
         transform: scale(1.1);
     }
     100% {
         transform: scale(1);
     }
+}
 .about-me__photo {
   transition: opacity 0.5s ease-in-out;
   opacity: 1;
@@ -372,10 +373,10 @@ padding: 0 16px;
 .project__img {
     width: 100%;
 }
-.project __wrapper (
+.project__wrapper {
     box-shadow: 0 20px 80px rgba(0,0,0,0.45); 
     border-radius: 20px;
-)
+}
 /* PROJECTS */
 .project__img {
   width: 100%;
@@ -391,9 +392,7 @@ padding: 0 16px;
 }
 
 
-.project__wrapper:before {
-co
-}
+
 .project-header-box {
   background-color: #f0f0f0; /* Light gray background */
   border-left: 6px solid #6a1b9a; /* Purple accent border */
@@ -815,8 +814,8 @@ footer {
 }
 /*SMALL PHONES */
 @media (max-width:480px) {
- .nav_link:not(:last-child) 
-  display: none;
+ .nav_link:not(:last-child) {
+  display: none;}
 }
 .resume-btn {
   background-color: #ffffff;
